@@ -1,4 +1,4 @@
-package clases.tareasItson;
+package tareasItson;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;

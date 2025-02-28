@@ -1,4 +1,4 @@
-package clases.Operadores;
+package Operadores;
 
 public class OperadoresUnarios{
     public static void main(String[] args) {

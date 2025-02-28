@@ -1,3 +1,5 @@
+package Primitivos;
+
 public class PrimitivosFloat {
 
     static float varDouble;

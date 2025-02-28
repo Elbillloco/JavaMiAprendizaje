@@ -1,4 +1,4 @@
-package clases.Tareas;
+package Tareas;
 import java.util.Scanner;
 public class ProgramaManejoDeNombres {
     public static void main(String[] args) {

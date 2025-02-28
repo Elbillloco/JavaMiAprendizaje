@@ -1,4 +1,4 @@
-package clases.Operadores;
+package Operadores;
 
 import javax.swing.*;
 
