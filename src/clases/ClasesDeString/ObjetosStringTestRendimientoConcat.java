@@ -1,4 +1,4 @@
-package clases.ClasesDeString;
+package ClasesDeString;
 
 public class ObjetosStringTestRendimientoConcat {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package clases.ClasesDeString;
+package ClasesDeString;
 
 public class ObjetosStringConcatenacion {
     public static void main(String[] args) {
@@ -19,9 +19,9 @@ public class ObjetosStringConcatenacion {
         entonces simplemente procede a imprimirlo tal cual el valor de este caso un String*/
         
         String detalle2 = curso.concat("con").concat(profesor);/* Para concatenar, la forma 1 es poner un +
-        esto lo que hace es crear una instancia de .StringBuilder, cada que se pone un + para concatenar lo hace,
-        mientras que el .concat es lo mismo y mas aparte se puede anidar una tras otra dentro de una variable,
-        entonces, hay 2 metodos a usar, el + y el .concat, ya dependera de que se utilice.*/
+        esto lo que hace es crear una instancia dé. StringBuilder, cada que se pone un + para concatenar lo hace,
+        mientras que él.concat es lo mismo y más aparte se puede anidar una tras otra dentro de una variable,
+        entonces, hay 2 metodos a usar, el + y él.concat, ya dependent de que se utilice.*/
         System.out.println("detalle2 = " + detalle2);
     }
 }
