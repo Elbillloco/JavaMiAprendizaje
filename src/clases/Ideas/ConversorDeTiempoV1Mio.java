@@ -1,14 +1,16 @@
 package Ideas;
 
 import java.util.Scanner;
-public class ConversorDeTiempo {
+
+public class ConversorDeTiempoV1Mio {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
-        double tiempoSegundosMinutos, tiempoHorasDias, cantidadTiempoMinutos, cantidadTiempoHoras, cantidadTiempoDias;
+        double tiempoSegundosMinutos,tiempoMinutosHoras, tiempoHorasDias, cantidadTiempoMinutos, cantidadTiempoHoras, cantidadTiempoDias;
         String tipoDato;
         tiempoSegundosMinutos = 60;
+        tiempoMinutosHoras = 60;
         tiempoHorasDias = 24;
 
         String peticion = "Porfavor introduce tu convercion: \n" +
@@ -24,19 +26,19 @@ public class ConversorDeTiempo {
         if(tipoDato.equalsIgnoreCase("minutos")){
             System.out.println(peticionMinutos);
             cantidadTiempoMinutos = scanner.nextDouble();
-            System.out.println( cantidadTiempoMinutos * ( 1 / tiempoSegundosMinutos));
+            System.out.println( cantidadTiempoMinutos/ tiempoSegundosMinutos );
         }
 
         if (tipoDato.equalsIgnoreCase("horas")){
             System.out.println(peticionHoras);
             cantidadTiempoHoras = scanner.nextDouble();
-            System.out.println( cantidadTiempoHoras * (1 / tiempoSegundosMinutos));
+            System.out.println( cantidadTiempoHoras / tiempoMinutosHoras);
         }
 
         if (tipoDato.equalsIgnoreCase("dias")){
             System.out.println(peticionDias);
             cantidadTiempoDias = scanner.nextDouble();
-            System.out.println( cantidadTiempoDias * ( 1 / tiempoHorasDias));
+            System.out.println( cantidadTiempoDias / tiempoHorasDias);
         }
     }
 }
