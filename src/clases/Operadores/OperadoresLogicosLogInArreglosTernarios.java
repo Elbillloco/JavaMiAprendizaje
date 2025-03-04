@@ -62,7 +62,12 @@ public class OperadoresLogicosLogInArreglosTernarios {
         String mensaje = esAunteticado ? "Bienvenido usuario\n".concat(usuario).concat("!") :
                     "Username o Password incorrecto! \nLo sentimos, requiere autenticacion";
         System.out.println(mensaje);
-           /*if( (usernames[i].equalsIgnoreCase(usuario) && passwords[i].equalsIgnoreCase(pass)) ){
+
+           /*Este codigo es basicamente la forma mas extensa
+           de hacer lo que se hizo con el terneario, pero esta forma se utilizaria para informacion mas extensa,
+           como ejemplo, 1000 usuarios, con esta forma seria mas robusto
+
+           if( (usernames[i].equalsIgnoreCase(usuario) && passwords[i].equalsIgnoreCase(pass)) ){
               esAunteticado = true;
                break;
            }
