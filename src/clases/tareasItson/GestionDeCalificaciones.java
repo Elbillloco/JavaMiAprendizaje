@@ -24,7 +24,7 @@ public class GestionDeCalificaciones {
         peticion[1] = "Ingrese su calificacion a la materia deseada: ";
         peticion[2] = "Bienvenido al programa de gestion de calificaciones, Empezamos?\n Empezar - Salir: ";
         peticion[3] = "Porfavor ingrese una opcion valida";
-        peticion[4] = "Quieres ingresar otro alumno?\n Si/Salir: ";
+        peticion[4] = "Quieres ingresar otro alumno?\n Si/No: ";
         peticion[5] = "Gracias por usar el programa de Gestion de Calificaciones";
         peticion[6] = "La calificacion debe ser positiva...";
 
@@ -109,7 +109,7 @@ public class GestionDeCalificaciones {
                     comenzar = false;
                 }
 
-            } else if (ingrese[0].equalsIgnoreCase("salir")) {
+            } else if (ingrese[0].equalsIgnoreCase("no")) {
                 System.out.println(peticion[5]);
                 comenzar = false;
 
