@@ -8,5 +8,6 @@ public class EjemploStringExtensionArchivo {
         System.out.println("archivo.substring(i+1)) = " + archivo.substring(i+1));/* aqui se esta
         haciendo un ejercicio para entender un poco mas el como funcionan estos metodos de String*/
 
+        String a ="holapapu";
     }
 }
