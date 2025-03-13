@@ -1,7 +1,7 @@
 -Hello Hello!!! i'am "ellocobill", i'am a student
 from itson learning from my own in Udemy, and
 here im uploading every of my daily classes
-there and proyect or functions.📚
+there, in general, my learning.📚
 
 -In fact, im a Quick learner🍎
 
