@@ -3,7 +3,7 @@ package FlujosDeControl;
 public class SentenciaForEach {
     public static void main(String[] args) {
 
-        int[] numeros ={1, 3, 5, 7, 9, 11, 13, 14};
+        int[] numeros ={1, 3, 5, 7, 9, 11, 13, 15};
         for (int num: numeros){/*De manera automatica va a incrementar sin necesidad de expresarlo
         explicitamente, osea que la variable que toma en cuenta para el incremento es el arreglo
         que se usa, y mas aparte, se utiliza mayormente o siempre con arreglos*/
