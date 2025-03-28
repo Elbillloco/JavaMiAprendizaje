@@ -72,7 +72,7 @@ public class SistemaDeNotasDeAlumnos {
                 }
 
             }
-            break;
+            continuar = false;
         }
 
     }
