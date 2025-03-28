@@ -1,52 +1,79 @@
 package Tareas.Tareas;
 
 import java.util.Scanner;
-//Nota, ejercicio mal hecho por mi parte, no entendi los requerimientos
+
 public class SistemaDeNotasDeAlumnos {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
-        Double[] calificacion = new Double[2];//array
-        String mensaje = "La calificacion es invalida, porfavor respeta el rango de calificaciones";//mensaje de control
-        int notasMayores5 = 0;
-        int notasMenores4 = 0;
-        int notasIguales1 = 0;
-        double sumanotasMayores5 = 0;
-        double sumanotasMenores4 = 0;
-        double sumatotal = 0;
+        Double[] calificaciones = new Double[20];
+        double contadorCalificacion = 0;
+        double contadorMayor5 = 0;
+        double contadorMenor4 = 0;
+        double contador1 = 0;
+        double totalMayor5 = 1;
+        double totalMenor4 = 1;
+        double total1 = 1;
+        double totalGlobal;
+        double promedioMayor5;
+        double promedioMenor4;
+        double promedio1;
+        boolean continuar = true;
 
-        System.out.println("---Ingresa 20 calificaciones con rango de 1 a 7 porfavor--- \n");//peticiones
+        System.out.println("--Bienvenido al Sistema de notas de Alumnos--\n");
 
-        int i = 0;//inicio de conteo
-        for (;i < calificacion.length ;){//aumento
+        while (continuar){
+            for (int i = 0; i <= calificaciones.length; ){
+                System.out.println("Ingrese su calificacion en escala de 1 a 7: ");
+                contadorCalificacion = s.nextDouble();
 
-            System.out.println("Ingrese su calificacion: ");
-            calificacion[i] = s.nextDouble();//lectura de el ingreso del usuario
-
-            boolean evaluarMax = ( calificacion[i] < 1.0 );//evaluador
-            boolean evaluarMin = ( calificacion[i] > 7.0 );//evaluado
-
-            if ( calificacion[i] == 1){
-                notasIguales1++;
-
-            } else if (calificacion[i] > 5){
-                notasMayores5++;
-
-            }else if (calificacion[i] < 4){
-                System.out.println ("");
-
-            }
-
-            if (evaluarMax){//control de errores
-                System.out.println( mensaje );
+                if (contadorCalificacion > 7.0) {
+                System.out.println("Porfavor ingrese calificaciones dentro del rango");
                 break;
 
-            } else if (evaluarMin) {
-                System.out.println( mensaje );
-                break;
+                } else if (contadorCalificacion < 1.0) {
+                    System.out.println("Porfavor ingrese calificaciones dentro del rango");
+                    break;
+
+                }else if (contadorCalificacion == 1.0){
+                    contador1 += total1;
+                    System.out.println("Se ha sumado!!");
+
+                }else if (contadorCalificacion <=4.0){
+                    contadorMenor4 += totalMenor4;
+                    System.out.println("Se ha sumado!!");
+
+                } else if (contadorCalificacion >=5.0) {
+                    contadorMayor5 += totalMayor5;
+                    System.out.println("Se ha sumado!!");
+
+                }
+
+
+                i++;
+
+                if (i == calificaciones.length){
+                    promedio1 = ( contador1 / calificaciones.length ) * 7;
+                    promedioMayor5 = ( contadorMayor5 / calificaciones.length) * 7;
+                    promedioMenor4 = ( contadorMenor4 / calificaciones.length ) * 7 ;
+                    totalGlobal = (( promedio1 + promedioMayor5 + promedioMenor4 ) / calificaciones.length ) * 10  ;
+
+                    System.out.println("Total de mayor o igual a 5 son = " + contadorMayor5);
+                    System.out.println("Total de menor o igual a 4 son = " + contadorMenor4);
+                    System.out.println("Total de igual a 1 son = " + contador1 + "\n");
+
+                    System.out.println("Promedio total de mayores o iguales a 5 son = " + promedioMayor5);
+                    System.out.println("Promedio total de menores o iguales a 4 son = " + promedioMenor4);
+                    System.out.println("Promedio total de iguales a 1 son = " + promedio1 + "\n");
+
+                    System.out.println("Promedio total de todas las calificaciones es = " + totalGlobal);
+                    break;
+
+                }
 
             }
-            i++;//aumento
+            break;
         }
+
     }
 }
